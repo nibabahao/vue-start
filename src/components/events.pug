@@ -1,0 +1,7 @@
+.container
+	button(type="button" name="button" @click="msg('a',$event)") test
+	.class(@click="parent")
+		p parent
+		p parent
+		p parent
+		.child(@click.stop="child") child

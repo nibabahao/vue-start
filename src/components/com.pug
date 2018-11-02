@@ -1,0 +1,8 @@
+.container
+	.com
+		slot(name="a")
+	| child components
+	|	{{ name }} {{ age }}
+	div
+		button(type="button" name="button" @click="$emit('path',34)") 发散到父组件
+		slot(name="b")
